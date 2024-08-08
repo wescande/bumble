@@ -40,6 +40,13 @@ BT_LE_TRANSPORT     = 1
 
 # fmt: on
 
+class CommonErrorCode(enum.IntEnum):
+    '''See Supplement to the Bluetooth Code Specification 1.2 List of Error Codes.'''
+
+    WRITE_REQUEST_REJECTED = 0xFC
+    CLIENT_CHARACTERISTIC_CONFIGURATION_DESCRIPTOR_IMPROPERLY_CONFIGURED = 0xFD
+    PROCEDURE_ALREADY_IN_PROGRESS = 0xFE
+    OUT_OF_RANGE = 0xFF
 
 # -----------------------------------------------------------------------------
 # Utils
